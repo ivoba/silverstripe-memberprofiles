@@ -118,7 +118,7 @@ class MemberProfilePage extends Page implements PermissionProvider {
 
 		$fields->addFieldsToTab('Root.Profile', array(
 			new Tab(
-                'Fields',
+                		'Fields',
 				_t('MemberProfiles.FIELDS', 'Fields'),
 				new GridField(
 					'Fields',
@@ -131,7 +131,7 @@ class MemberProfilePage extends Page implements PermissionProvider {
 			),
 			new Tab(
 				'Groups',
-                _t('MemberProfiles.GROUPS', 'Groups'),
+                		_t('MemberProfiles.GROUPS', 'Groups'),
 				$groups = new TreeMultiselectField(
 					'Groups',
 					_t('MemberProfiles.GROUPS', 'Groups'),
@@ -145,7 +145,7 @@ class MemberProfilePage extends Page implements PermissionProvider {
 			),
 			new Tab(
 				'PublicProfile',
-                _t('MemberProfiles.PUBLICPROFILE', 'Public Profile'),
+                		_t('MemberProfiles.PUBLICPROFILE', 'Public Profile'),
 				new GridField(
 					'Sections',
 					_t('MemberProfiles.PROFILESECTIONS', 'Profile Sections'),
